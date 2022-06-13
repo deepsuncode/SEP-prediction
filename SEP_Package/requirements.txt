@@ -1,0 +1,9 @@
+tensorboard==2.8.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow-estimator==2.8.0
+tensorflow-gpu==2.6.0
+numpy==1.19.5
+pandas==1.4.1
+keras==2.6.0
+scikit-learn==1.0.1
