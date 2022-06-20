@@ -1,0 +1,33 @@
+[2022-05-25 12:43:42] ********************************  Executing Python program: SEP_test.py   ******************************** 
+Starting hour: 12 ending hour: 12
+Running classification test type: FC_S  training for h = 12 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_12hr 
+Trying pre trained default models directory: default_models 
+[2022-05-25 12:43:42] Building model for: default_models\sep_model_fc_12hr\model_weights 
+[2022-05-25 12:43:43] Loading weights from: default_models\sep_model_fc_12hr\model_weights 
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 12, 14)]          0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 12, 100)           1500      
+_________________________________________________________________
+bidirectional (Bidirectional (None, 12, 800)           1603200   
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 12, 200)           720800    
+_________________________________________________________________
+SEPCustomAttention (SEPAtten (None, 200)               212       
+_________________________________________________________________
+flatten (Flatten)            (None, 200)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 201       
+_________________________________________________________________
+batch_normalization (BatchNo (None, 1)                 4         
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-05-25 12:43:51] Saving result to file: results\SEP_prediction_results_FC_S_12.csv 
+[2022-05-25 12:43:51] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_12.csv 
