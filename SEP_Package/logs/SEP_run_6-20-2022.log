@@ -1,0 +1,1011 @@
+[2022-06-20 17:47:55] ********************************  Executing Python program: SEP_train.py   ******************************** 
+Using default parameters: classification type is: FC_S  time windows to train: [12, 24, 36, 48, 60, 72]
+Starting hour: 12 ending hour: 72
+
+
+Running classification type: FC_S  training for h = 12 hour ahead
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_1 (Dense)             (None, 10, 100)           1600      
+                                                                 
+ bidirectional (Bidirectiona  (None, 10, 800)          1603200   
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, 10, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten (Flatten)           (None, 200)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization (BatchN  (None, 1)                4         
+ ormalization)                                                   
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 9s - loss: 3.5942 - accuracy: 0.6587 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 978ms/step
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_4 (Dense)             (None, 10, 100)           1600      
+                                                                 
+ bidirectional_2 (Bidirectio  (None, 10, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_3 (Bidirectio  (None, 10, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_1 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_5 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_1 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 8s - loss: 5.0224 - accuracy: 0.6667 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 950ms/step
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_7 (Dense)             (None, 10, 100)           1600      
+                                                                 
+ bidirectional_4 (Bidirectio  (None, 10, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_5 (Bidirectio  (None, 10, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_2 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_2 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 8s - loss: 3.2289 - accuracy: 0.6404 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 923ms/step
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_10 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_6 (Bidirectio  (None, 10, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_7 (Bidirectio  (None, 10, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_3 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_11 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_3 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 8s - loss: 4.8239 - accuracy: 0.6825 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_13 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_8 (Bidirectio  (None, 10, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_9 (Bidirectio  (None, 10, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_4 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_14 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_4 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 8s - loss: 2.6429 - accuracy: 0.6924 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+
+
+Running classification type: FC_S  training for h = 24 hour ahead
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_16 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_10 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_11 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_5 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_17 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_5 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 10s - loss: 2.2523 - accuracy: 0.7237 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_7 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_19 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_12 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_13 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_6 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_20 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_6 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 10s - loss: 3.2806 - accuracy: 0.6451 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_8 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_22 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_14 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_15 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_7 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_23 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_7 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 9s - loss: 2.6872 - accuracy: 0.6797 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 991ms/step
+Model: "model_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_9 (InputLayer)        [(None, 10, 15)]          0         
+                                                                 
+ dense_25 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_16 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_17 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_8 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_26 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_8 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 9s - loss: 2.2156 - accuracy: 0.7394 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_10 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_28 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_18 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_19 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_9 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_29 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_9 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 9s - loss: 2.8845 - accuracy: 0.6838 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+
+
+Running classification type: FC_S  training for h = 36 hour ahead
+Model: "model_10"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_11 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_31 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_20 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_21 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_10 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_32 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_10 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 11s - loss: 2.8018 - accuracy: 0.6362 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 3s 3s/step
+Model: "model_11"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_12 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_34 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_22 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_23 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_11 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_35 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_11 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 12s - loss: 4.4835 - accuracy: 0.6419 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_12"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_13 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_37 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_24 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_25 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_12 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_38 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_12 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 12s - loss: 2.3226 - accuracy: 0.731 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_13"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_14 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_40 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_26 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_27 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_13 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_41 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_13 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 11s - loss: 4.6543 - accuracy: 0.6648 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_14"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_15 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_43 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_28 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_29 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_14 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_44 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_14 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 11s - loss: 2.3443 - accuracy: 0.7338 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+
+
+Running classification type: FC_S  training for h = 48 hour ahead
+Model: "model_15"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_16 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_46 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_30 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_31 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_15 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_47 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_15 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 14s - loss: 2.5302 - accuracy: 0.7014 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 2s 2s/step
+Model: "model_16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_17 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_49 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_32 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_33 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_16 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_50 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_16 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 13s - loss: 4.9286 - accuracy: 0.6564 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_17"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_18 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_52 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_34 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_35 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_17 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_53 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_17 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 13s - loss: 2.2776 - accuracy: 0.7257 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_18"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_19 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_55 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_36 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_37 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_18 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_56 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_18 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 14s - loss: 3.9402 - accuracy: 0.6515 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_19"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_20 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_58 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_38 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_39 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_19 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_59 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_19 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 15s - loss: 2.3414 - accuracy: 0.7257 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+
+
+Running classification type: FC_S  training for h = 60 hour ahead
+Model: "model_20"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_21 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_61 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_40 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_41 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_20 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_62 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_20 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 16s - loss: 3.2534 - accuracy: 0.6656 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_21"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_22 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_64 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_42 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_43 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_21 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_65 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_21 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 14s - loss: 2.3141 - accuracy: 0.713 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_22"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_23 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_67 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_44 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_45 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_22 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_68 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_22 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 15s - loss: 2.2733 - accuracy: 0.713 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 2s 2s/step
+Model: "model_23"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_24 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_70 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_46 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_47 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_23 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_71 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_23 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 15s - loss: 2.2709 - accuracy: 0.713 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_24"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_25 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_73 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_48 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_49 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_24 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_74 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_24 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 17s - loss: 3.7767 - accuracy: 0.6106 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+
+
+Running classification type: FC_S  training for h = 72 hour ahead
+Model: "model_25"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_26 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_76 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_50 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_51 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_25 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_77 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_25 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 1/5
+11/11 - 15s - loss: 3.3189 - accuracy: 0.638 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_26"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_27 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_79 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_52 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_53 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_26 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_80 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_26 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 2/5
+11/11 - 17s - loss: 2.5982 - accuracy: 0.6835 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_27"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_28 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_82 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_54 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_55 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_27 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_83 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_27 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 3/5
+11/11 - 17s - loss: 2.8801 - accuracy: 0.6575 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_28"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_29 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_85 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_56 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_57 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_28 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_86 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_28 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 4/5
+11/11 - 16s - loss: 3.5495 - accuracy: 0.6539 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step
+Model: "model_29"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_30 (InputLayer)       [(None, 10, 15)]          0         
+                                                                 
+ dense_88 (Dense)            (None, 10, 100)           1600      
+                                                                 
+ bidirectional_58 (Bidirecti  (None, 10, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_59 (Bidirecti  (None, 10, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              210       
+ ntion)                                                          
+                                                                 
+ flatten_29 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_89 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_29 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,326,015
+Trainable params: 2,326,013
+Non-trainable params: 2
+_________________________________________________________________
+Epoch 5/5
+11/11 - 18s - loss: 4.6905 - accuracy: 0.6272 
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 1s/step

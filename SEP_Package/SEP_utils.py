@@ -111,7 +111,7 @@ def set_verbose(b):
     global g_verbose
     g_verbose = b
     
-def log(*message,verbose=verbose,format_logging=True, end=' '):
+def log(*message,verbose=verbose,format_logging=False, end=' '):
     log_str = []
     global g_verbose
     if verbose or g_verbose:
@@ -520,7 +520,6 @@ def calc_confusion_matrix(y_true,
         
         log(cm_table_str)
         if log_to_file :
-            os.makedirs(os.path.abspath(cm_file),exist_ok=True)
             log('Saving the performance metrics to files:',  cm_file,verbose=True)
             h = open(cm_file,'w')
             h.write(str(','.join(cols)).strip() + '\n')
@@ -644,13 +643,21 @@ def weighted_auc(tpr, fpr, alg='BiLSTM'):
         
     return (competition_metric / normalization)*0.9
 
+def get_val_as_string(l):
+    if l == 0:
+        return "N"
+    return "P"
+
 def save_prediction_results(e_type, time_window, y_true,y_pred, y_calibrated_prop):
+    os.makedirs('results',exist_ok=True)
     predictions_file= 'results' + os.sep + 'SEP_prediction_results_'+ str(e_type) +'_' + str(time_window) +'.csv'
     log('Saving result to file:',predictions_file,verbose=True)
     h =open(predictions_file,'w')
     h.write('Label,Prediction,CalibratedProbability\n')
     for i in range(len(y_true)):
-        h.write(str(y_true[i]) + ',' + str(y_pred[i])  + ',' + str(y_calibrated_prop[i])+ '\n')
+        t = get_val_as_string(y_true[i])
+        p = get_val_as_string(y_pred[i])
+        h.write(str(t) + ',' + str(p)  + ',' + str(y_calibrated_prop[i])+ '\n')
     h.flush()
     h.close()
 
@@ -658,7 +665,10 @@ def print_summary_to_file(s):
     global log_file
     with open(log_file,'a') as f:
         print(s, file=f)
-        
+
+def set_log_timestamp(t):
+    global format_logging
+    format_logging = t
 create_log_file('BiLSTM', '', '',dir_name='logs')
-log('********************************  Executing Python program:', sys.argv[0].split(os.sep)[-1], '  ********************************',verbose=True)  
+#log('********************************  Executing Python program  ********************************',verbose=True)  
     
