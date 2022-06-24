@@ -508,7 +508,7 @@ def calc_confusion_matrix(y_true,
                   }]
     
         cols = ['Algorithm','eType','TW', 'T','P','N','TP','TN','FP','FN','ACC','BACC','Pre','Rec',
-                'TSS','HSS','AUC','WAUC','BSS','BSSC']
+                'TSS','HSS','AUC','WAUC','BSC','BSSC']
                 
         cols_print = cols[:]
         p_df = pd.DataFrame(p_dic,index=None, columns=cols)

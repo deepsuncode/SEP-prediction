@@ -1,0 +1,435 @@
+Using default parameters: classification type is: FC_S  time windows to train: [12, 24, 36, 48, 60, 72]
+Starting hour: 12 ending hour: 72
+Running classification test type: FC_S  training for h = 12 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_12hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_12hr\model_weights 
+Loading weights from: default_models\sep_model_fc_12hr\model_weights 
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_1 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional (Bidirectiona  (None, 12, 800)          1603200   
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten (Flatten)           (None, 200)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization (BatchN  (None, 1)                4         
+ ormalization)                                                   
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_12.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_12.csv 
+Running classification test type: FC_S  training for h = 24 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_24hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_24hr\model_weights 
+Loading weights from: default_models\sep_model_fc_24hr\model_weights 
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_4 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_2 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_3 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_1 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_5 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_1 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_24.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_24.csv 
+Running classification test type: FC_S  training for h = 36 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_36hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_36hr\model_weights 
+Loading weights from: default_models\sep_model_fc_36hr\model_weights 
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_7 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_4 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_5 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_2 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_2 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_36.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_36.csv 
+Running classification test type: FC_S  training for h = 48 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_48hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_48hr\model_weights 
+Loading weights from: default_models\sep_model_fc_48hr\model_weights 
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_10 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_6 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_7 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_3 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_11 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_3 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_48.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_48.csv 
+Running classification test type: FC_S  training for h = 60 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_60hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_60hr\model_weights 
+Loading weights from: default_models\sep_model_fc_60hr\model_weights 
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_13 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_8 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_9 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_4 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_14 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_4 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_60.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_60.csv 
+Running classification test type: FC_S  training for h = 72 hour ahead
+Error: Model weights directory does not exist: models\sep_model_fc_72hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_fc_72hr\model_weights 
+Loading weights from: default_models\sep_model_fc_72hr\model_weights 
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_16 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_10 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_11 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_5 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_17 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_5 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_FC_S_72.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_72.csv 
+Starting hour: 12 ending hour: 72
+Running classification test type: F_S  training for h = 12 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_12hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_12hr\model_weights 
+Loading weights from: default_models\sep_model_f_12hr\model_weights 
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_1 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional (Bidirectiona  (None, 12, 800)          1603200   
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten (Flatten)           (None, 200)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization (BatchN  (None, 1)                4         
+ ormalization)                                                   
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_12.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_12.csv 
+Running classification test type: F_S  training for h = 24 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_24hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_24hr\model_weights 
+Loading weights from: default_models\sep_model_f_24hr\model_weights 
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_4 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_2 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_3 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_1 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_5 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_1 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_24.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_24.csv 
+Running classification test type: F_S  training for h = 36 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_36hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_36hr\model_weights 
+Loading weights from: default_models\sep_model_f_36hr\model_weights 
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_7 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_4 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_5 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_2 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_2 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_36.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_36.csv 
+Running classification test type: F_S  training for h = 48 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_48hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_48hr\model_weights 
+Loading weights from: default_models\sep_model_f_48hr\model_weights 
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_10 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_6 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_7 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_3 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_11 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_3 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_48.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_48.csv 
+Running classification test type: F_S  training for h = 60 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_60hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_60hr\model_weights 
+Loading weights from: default_models\sep_model_f_60hr\model_weights 
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_13 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_8 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_9 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_4 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_14 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_4 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_60.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_60.csv 
+Running classification test type: F_S  training for h = 72 hour ahead
+Error: Model weights directory does not exist: models\sep_model_f_72hr 
+Trying pre trained default models directory: default_models 
+Building model for: default_models\sep_model_f_72hr\model_weights 
+Loading weights from: default_models\sep_model_f_72hr\model_weights 
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_16 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_10 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_11 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_5 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_17 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_5 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+Saving result to file: results\SEP_prediction_results_F_S_72.csv 
+Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_F_S_72.csv 
