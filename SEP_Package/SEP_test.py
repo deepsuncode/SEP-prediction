@@ -34,6 +34,7 @@ from tensorflow import keras
 
 from sklearn.calibration import calibration_curve
 from sklearn.isotonic import IsotonicRegression as IR
+from sklearn.preprocessing import minmax_scale
 
 from SEP_utils import *
 from SEP_model import SEPModel 
@@ -73,18 +74,19 @@ def test(e_type, start_hour, end_hour):
         log('Prediction and calibration..', verbose=verbose)
         predictions_proba = predictions_atten_proba
         calibration_curve(y_test, 
-                          predictions_proba, 
-                          n_bins=10, 
-                          normalize=True)
+                          minmax_scale(predictions_proba,
+                                    feature_range=(0, 1)), 
+                          n_bins=10)
         ir = IR()
         predictions_proba = predictions_proba.reshape(predictions_proba.shape[0])
         log('predictions_proba shape:', predictions_proba.shape, verbose=verbose)
         log('y_test shape: ', y_test.shape, verbose=verbose)
         ir.fit(predictions_proba,y_test)
         cal_pred = ir.predict(predictions_proba)
-        calibration_curve(y_test, cal_pred,
-                          n_bins=10, 
-                          normalize=True)
+        calibration_curve(y_test,
+                          minmax_scale(cal_pred,
+                                        feature_range=(0, 1)),
+                          n_bins=10)
         
         save_prediction_results(e_type, time_window, y_test, predictions, cal_pred)
         result, cols = calc_confusion_matrix(y_test,

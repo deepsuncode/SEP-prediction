@@ -34,6 +34,7 @@ import numpy as np
 from sklearn.calibration import calibration_curve
 from sklearn.isotonic import IsotonicRegression as IR
 from sklearn.utils import class_weight
+from sklearn.preprocessing import minmax_scale
 from SEP_utils import *
 from SEP_model import SEPModel 
 
@@ -136,14 +137,22 @@ def train(e_type, start_hour, end_hour):
             predictions = np.array(predictions_atten_classes).reshape(len(predictions_atten_classes)).tolist()
             
             predictions_proba = predictions_atten_proba
-            fop, mpv = calibration_curve(y_test, predictions_proba, n_bins=10, normalize=True)
+            fop, mpv = calibration_curve(
+                        y_test, 
+                        minmax_scale(predictions_proba,
+                                    feature_range=(0, 1)),
+                        n_bins=10)
             ir = IR()
             predictions_proba = predictions_proba.reshape(predictions_proba.shape[0])
             log('predictions_proba shape:', predictions_proba.shape)
             log('y_test shape: ', y_test.shape)
             ir.fit(predictions_proba,y_test)
             cal_pred = ir.predict(predictions_proba)
-            fop, mpv = calibration_curve(y_test, cal_pred, n_bins=10, normalize=True)
+            fop, mpv = calibration_curve(
+                        y_test,
+                        minmax_scale(cal_pred,
+                                    feature_range=(0, 1)),
+                        n_bins=10)
 
             result, cols = calc_confusion_matrix(y_test,predictions, 
                                                  time_window, e_type, cnn_type,epochs=total_epochs,test_year='',log_to_file=False,
